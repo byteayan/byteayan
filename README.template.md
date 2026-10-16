@@ -27,7 +27,7 @@ Open pull requests in upstream projects (refreshed automatically).
 ## Stats
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=byteayan&show_icons=true&theme=transparent&hide_border=true&title_color=38C2FF&text_color=BDC3CF&icon_color=38C2FF&count_private=true&include_all_commits=true" alt="GitHub stats"/>
+  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=byteayan&show_icons=true&theme=transparent&hide_border=true&title_color=38C2FF&text_color=BDC3CF&icon_color=38C2FF&count_private=true&include_all_commits=true&hide_rank=true&hide=stars,issues&show=prs_merged" alt="GitHub stats"/>
   <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=byteayan&layout=compact&theme=transparent&hide_border=true&title_color=38C2FF&text_color=BDC3CF&card_width=445" alt="top languages"/>
 </p>
 
