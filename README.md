@@ -20,7 +20,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 | Project | PRs | Focus |
 | --- | --- | --- |
 | [Apache HugeGraph](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aapache%2Fhugegraph+repo%3Aapache%2Fhugegraph-doc) | 9 merged · 6 open | Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.<br><sub>Latest: <a href="https://github.com/apache/hugegraph-doc/pull/529">#529</a> — docs: add HG_SERVER_URLS_TO_PD and HG_SERVER_DEPLOY_IN_K8S</sub> |
-| [Open Food Facts](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aopenfoodfacts%2Fopenfoodfacts-explorer+repo%3Aopenfoodfacts%2Fopen-prices-frontend) | 4 merged · 3 open | Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison.<br><sub>Latest: <a href="https://github.com/openfoodfacts/open-prices-frontend/pull/2415">#2415</a> — fix(Assistants): "Add a new proof" reopened the proof just added</sub> |
+| [Open Food Facts](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aopenfoodfacts%2Fopenfoodfacts-explorer+repo%3Aopenfoodfacts%2Fopen-prices-frontend) | 4 merged · 4 open | Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison.<br><sub>Latest: <a href="https://github.com/openfoodfacts/open-prices-frontend/pull/2415">#2415</a> — fix(Assistants): "Add a new proof" reopened the proof just added</sub> |
 | [Zulip](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Azulip%2Fzulip) | 1 merged · 1 open | Cache flushing when email visibility changes, status emoji rendering.<br><sub>Latest: <a href="https://github.com/zulip/zulip/pull/40192">#40192</a> — user_settings: Flush caches keyed by old email on visibility change.</sub> |
 | [Rocket.Chat](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3ARocketChat%2FRocket.Chat) | 0 merged · 2 open | UI fixes for the home page and the emoji picker.<br><sub>Open: <a href="https://github.com/RocketChat/Rocket.Chat/pull/42158">#42158</a> — fix: custom category never highlighted in the emoji picker header</sub> |
 | [Doodle (Creative Scala)](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Acreativescala%2Fdoodle) | 0 merged · 1 open | `renderToTag` for the Scala.js SVG backend.<br><sub>Open: <a href="https://github.com/creativescala/doodle/pull/243">#243</a> — Add Svg.renderToTag / Canvas.renderToTag for SVG backend</sub> |
@@ -29,6 +29,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 
 Open pull requests in upstream projects (refreshed automatically).
 
+- [openfoodfacts/openfoodfacts-explorer#2103](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2103) — ci: scope pull_request_target concurrency to the PR number
 - [apache/hugegraph-doc#544](https://github.com/apache/hugegraph-doc/pull/544) — docs(docker): document the non-root PD, Store and Server images
 - [apache/hugegraph#3381](https://github.com/apache/hugegraph/pull/3381) — feat(docker): run PD, Store and Server images as a non-root user
 - [apache/hugegraph#3380](https://github.com/apache/hugegraph/pull/3380) — refactor(pd): make the RaftEngine constructor private
@@ -56,4 +57,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-10-20 21:12 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-10-22 11:05 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
