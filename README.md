@@ -7,7 +7,7 @@ Open source contributor · Java server work & web frontends
 
 </div>
 
-I contribute bug fixes, cleanups and docs to open source projects. **16 merged upstream PRs** so far, mostly in Apache HugeGraph and Open Food Facts.
+I contribute bug fixes, cleanups and docs to open source projects. **17 merged upstream PRs** so far, mostly in Apache HugeGraph and Open Food Facts.
 
 On [Apache HugeGraph](https://github.com/apache/hugegraph) I work on the server and its Docker and Helm setup: keeping crash diagnostics after a container restart, mapping server config from environment variables in the Docker image, binding locally loaded graphs in Gremlin Server, removing dead scheduler and election code, and updating the docs to match.
 
@@ -19,7 +19,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 
 | Project | PRs | Focus |
 | --- | --- | --- |
-| [Apache HugeGraph](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aapache%2Fhugegraph+repo%3Aapache%2Fhugegraph-doc) | 10 merged · 5 open | Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.<br><sub>Latest: <a href="https://github.com/apache/hugegraph/pull/3380">#3380</a> — refactor(pd): make the RaftEngine constructor private</sub> |
+| [Apache HugeGraph](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aapache%2Fhugegraph+repo%3Aapache%2Fhugegraph-doc) | 11 merged · 4 open | Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.<br><sub>Latest: <a href="https://github.com/apache/hugegraph/pull/3381">#3381</a> — feat(docker): run PD, Store and Server images as a non-root user</sub> |
 | [Open Food Facts](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aopenfoodfacts%2Fopenfoodfacts-explorer+repo%3Aopenfoodfacts%2Fopen-prices-frontend) | 4 merged · 4 open | Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison.<br><sub>Latest: <a href="https://github.com/openfoodfacts/open-prices-frontend/pull/2415">#2415</a> — fix(Assistants): "Add a new proof" reopened the proof just added</sub> |
 | [Zulip](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Azulip%2Fzulip) | 1 merged · 1 open | Cache flushing when email visibility changes, status emoji rendering.<br><sub>Latest: <a href="https://github.com/zulip/zulip/pull/40192">#40192</a> — user_settings: Flush caches keyed by old email on visibility change.</sub> |
 | [Rocket.Chat](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3ARocketChat%2FRocket.Chat) | 0 merged · 2 open | UI fixes for the home page and the emoji picker.<br><sub>Open: <a href="https://github.com/RocketChat/Rocket.Chat/pull/42158">#42158</a> — fix: custom category never highlighted in the emoji picker header</sub> |
@@ -31,7 +31,6 @@ Open pull requests in upstream projects (refreshed automatically).
 
 - [openfoodfacts/openfoodfacts-explorer#2103](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2103) — ci: scope pull_request_target concurrency to the PR number
 - [apache/hugegraph-doc#544](https://github.com/apache/hugegraph-doc/pull/544) — docs(docker): document the non-root PD, Store and Server images
-- [apache/hugegraph#3381](https://github.com/apache/hugegraph/pull/3381) — feat(docker): run PD, Store and Server images as a non-root user
 - [apache/hugegraph#3379](https://github.com/apache/hugegraph/pull/3379) — fix(pd): wait for a held metadata RocksDB lock at startup
 - [apache/hugegraph-doc#535](https://github.com/apache/hugegraph-doc/pull/535) — docs(store): document the auto-sized RocksDB memory budget
 - [openfoodfacts/openfoodfacts-explorer#2076](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2076) — feat(compare): explain the NOVA group in the comparison table
@@ -55,4 +54,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-10-24 20:08 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-10-25 20:20 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
