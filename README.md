@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED from README.template.md — do not edit by hand -->
 <div align="center">
 
-# Ayan Alam
+# Ayan
 
 Open source contributor · Java server work & web frontends
 
