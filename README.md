@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED from README.template.md — do not edit by hand -->
 <div align="center">
 
-# Ayan
+# Ayan Alam
 
 Open source contributor · Java server work & web frontends
 
@@ -51,4 +51,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-10-29 12:13 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-10-29 22:23 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
