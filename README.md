@@ -19,7 +19,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 
 | Project | PRs | Focus |
 | --- | --- | --- |
-| [Apache HugeGraph](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aapache%2Fhugegraph+repo%3Aapache%2Fhugegraph-doc) | 14 merged · 1 open | Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.<br><sub>Latest: <a href="https://github.com/apache/hugegraph/pull/3355">#3355</a> — fix(store): size the RocksDB memory budget from available memory</sub> |
+| [Apache HugeGraph](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aapache%2Fhugegraph+repo%3Aapache%2Fhugegraph-doc) | 14 merged · 2 open | Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.<br><sub>Latest: <a href="https://github.com/apache/hugegraph/pull/3355">#3355</a> — fix(store): size the RocksDB memory budget from available memory</sub> |
 | [Open Food Facts](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Aopenfoodfacts%2Fopenfoodfacts-explorer+repo%3Aopenfoodfacts%2Fopen-prices-frontend) | 5 merged · 3 open | Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison.<br><sub>Latest: <a href="https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2074">#2074</a> — fix(prices): link to the maintained Open Prices add page</sub> |
 | [Zulip](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3Azulip%2Fzulip) | 1 merged · 1 open | Cache flushing when email visibility changes, status emoji rendering.<br><sub>Latest: <a href="https://github.com/zulip/zulip/pull/40192">#40192</a> — user_settings: Flush caches keyed by old email on visibility change.</sub> |
 | [Rocket.Chat](https://github.com/pulls?q=is%3Apr+author%3Abyteayan+repo%3ARocketChat%2FRocket.Chat) | 0 merged · 2 open | UI fixes for the home page and the emoji picker.<br><sub>Open: <a href="https://github.com/RocketChat/Rocket.Chat/pull/42158">#42158</a> — fix: custom category never highlighted in the emoji picker header</sub> |
@@ -29,6 +29,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 
 Open pull requests in upstream projects (refreshed automatically).
 
+- [apache/hugegraph#3432](https://github.com/apache/hugegraph/pull/3432) — fix(store): survive bad cgroup paths and honor a command-line memory budget
 - [openfoodfacts/openfoodfacts-explorer#2103](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2103) — ci: scope pull_request_target concurrency to the PR number
 - [apache/hugegraph-doc#535](https://github.com/apache/hugegraph-doc/pull/535) — docs(store): document the auto-sized RocksDB memory budget
 - [openfoodfacts/openfoodfacts-explorer#2076](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2076) — feat(compare): explain the NOVA group in the comparison table
@@ -50,4 +51,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-10-28 22:08 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-10-29 12:13 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
