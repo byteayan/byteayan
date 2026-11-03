@@ -32,11 +32,6 @@ PROJECTS = [
         "focus": "Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison, CI.",
     },
     {
-        "name": "DecisionTrail (Hacktoberfest 2026)",
-        "repos": ["arshilkxwork/Hacktober-Fest"],
-        "focus": "Team hackathon project: thread loaders for GitHub and discuss.python.org, PEP evaluation, a local API server.",
-    },
-    {
         "name": "Zulip",
         "repos": ["zulip/zulip"],
         "focus": "Cache flushing when email visibility changes, status emoji rendering.",
