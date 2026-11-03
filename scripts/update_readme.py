@@ -4,15 +4,19 @@
 import json
 import os
 import re
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+import cards
+
 USER = "byteayan"
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "README.template.md"
 README = ROOT / "README.md"
+ASSETS = ROOT / "assets"
 HEADER = "<!-- AUTO-GENERATED from README.template.md — do not edit by hand -->\n"
 UPDATED_RE = re.compile(r"Auto-updated [^·]*·")
 
@@ -20,12 +24,17 @@ PROJECTS = [
     {
         "name": "Apache HugeGraph",
         "repos": ["apache/hugegraph", "apache/hugegraph-doc"],
-        "focus": "Server fixes, Docker and Helm config, crash diagnostics, dead-code removal, deployment docs.",
+        "focus": "Server, PD and Store fixes, non-root Docker images, RocksDB memory sizing, crash diagnostics, deployment docs.",
     },
     {
         "name": "Open Food Facts",
         "repos": ["openfoodfacts/openfoodfacts-explorer", "openfoodfacts/open-prices-frontend"],
-        "focus": "Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison.",
+        "focus": "Explorer (SvelteKit) and Open Prices (Vue) fixes: links, forms, the proof assistant, product comparison, CI.",
+    },
+    {
+        "name": "DecisionTrail (Hacktoberfest 2026)",
+        "repos": ["arshilkxwork/Hacktober-Fest"],
+        "focus": "Team hackathon project: thread loaders for GitHub and discuss.python.org, PEP evaluation, a local API server.",
     },
     {
         "name": "Zulip",
@@ -45,20 +54,45 @@ PROJECTS = [
 ]
 
 
-def search(query):
+def api(url, body=None):
     headers = {"Accept": "application/vnd.github+json", "User-Agent": USER}
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         headers["Authorization"] = f"Bearer {token}"
+    data = json.dumps(body).encode() if body is not None else None
+    with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=headers)) as resp:
+        return json.load(resp)
+
+
+def search(query):
     items, page = [], 1
     while True:
         params = {"q": query, "sort": "created", "order": "desc", "per_page": 100, "page": page}
-        url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(params)
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers)) as resp:
-            data = json.load(resp)
+        data = api("https://api.github.com/search/issues?" + urllib.parse.urlencode(params))
         items += data["items"]
         if not data["items"] or len(items) >= data["total_count"]:
             return items
+        page += 1
+
+
+def graphql(query):
+    # The GraphQL API rejects anonymous calls, so local runs without a token skip these stats.
+    if not os.environ.get("GITHUB_TOKEN"):
+        return None
+    try:
+        return api("https://api.github.com/graphql", {"query": query}).get("data")
+    except urllib.error.URLError as err:
+        print(f"GraphQL stats skipped: {err}")
+        return None
+
+
+def changed_files(pr):
+    files, page = [], 1
+    while True:
+        batch = api(f"{pr['pull_request']['url']}/files?per_page=100&page={page}")
+        files += [(f["filename"], f["changes"]) for f in batch]
+        if len(batch) < 100:
+            return files
         page += 1
 
 
@@ -107,10 +141,38 @@ def open_list(opened):
     )
 
 
+def write_if_changed(path, text):
+    if not path.exists() or path.read_text() != text:
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(text)
+        print(f"{path.name} updated")
+
+
+def render_cards(merged, opened):
+    rows = [
+        ("PRs merged", len(merged)),
+        ("PRs open", len(opened)),
+        ("Projects contributed to", len({repo_of(pr) for pr in merged + opened})),
+    ]
+    data = graphql(
+        f'{{ user(login: "{USER}") {{ contributionsCollection {{ contributionCalendar {{ totalContributions }} }} }}'
+        f' search(query: "answered-by:{USER}", type: DISCUSSION) {{ discussionCount }} }}'
+    )
+    if data:
+        rows.append(("Accepted discussion answers", data["search"]["discussionCount"]))
+        rows.append(("Contributions in the last year",
+                     data["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]))
+    write_if_changed(ASSETS / "stats.svg", cards.stats_card(rows))
+
+    files = [f for pr in merged + opened for f in changed_files(pr)]
+    write_if_changed(ASSETS / "languages.svg", cards.languages_card(*cards.language_totals(files)))
+
+
 def main():
     upstream = f"is:pr author:{USER} -user:{USER}"
     merged = search(f"{upstream} is:merged")
     opened = search(f"{upstream} is:open")
+    render_cards(merged, opened)
 
     body = (
         TEMPLATE.read_text()
