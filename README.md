@@ -13,8 +13,6 @@ On [Apache HugeGraph](https://github.com/apache/hugegraph) I work across the Ser
 
 On [Open Food Facts](https://github.com/openfoodfacts) I fix bugs in [Explorer](https://github.com/openfoodfacts/openfoodfacts-explorer) (SvelteKit) and the [Open Prices](https://github.com/openfoodfacts/open-prices-frontend) frontend (Vue).
 
-At Hacktoberfest 2026 Hack Day I built parts of [DecisionTrail](https://github.com/arshilkxwork/Hacktober-Fest) with my team, a tool that recovers engineering decisions from GitHub and discuss.python.org threads.
-
 Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Alpha-Region-Prototype), a dashboard UI in plain HTML, CSS and JavaScript with hand-rolled canvas charts and an SVG heatmap.
 
 ## Upstream work
@@ -52,4 +50,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-11-03 09:50 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-11-03 09:51 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
