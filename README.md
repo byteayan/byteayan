@@ -7,7 +7,7 @@ Open source contributor · Java server work & web frontends
 
 </div>
 
-I contribute bug fixes, cleanups and docs to open source projects. **22 merged upstream PRs** so far, mostly in Apache HugeGraph and Open Food Facts.
+I contribute bug fixes, cleanups and docs to open source projects. **27 merged upstream PRs** so far, mostly in Apache HugeGraph and Open Food Facts.
 
 On [Apache HugeGraph](https://github.com/apache/hugegraph) I work across the Server, PD and Store modules and their Docker and Helm setup: running the images as a non-root user, sizing the RocksDB memory budget from available memory, keeping crash diagnostics after a container restart, binding locally loaded graphs in Gremlin Server, removing dead scheduler and election code, and updating the docs to match.
 
@@ -50,4 +50,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-11-03 09:51 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-11-06 13:41 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
