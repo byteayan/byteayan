@@ -32,7 +32,7 @@ Open pull requests in upstream projects (refreshed automatically).
 - [openfoodfacts/openfoodfacts-explorer#2181](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2181) — feat(preferences): add expand all, collapse all and reset to defaults
 - [openfoodfacts/openfoodfacts-explorer#2076](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2076) — feat(compare): explain the NOVA group in the comparison table
 - [openfoodfacts/openfoodfacts-explorer#2075](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2075) — fix(edit): stop truncating the energy inputs in the nutrition step
-- [zulip/zulip#40237](https://github.com/zulip/zulip/pull/40237) — user_status: Always show status emoji as images.
+- [zulip/zulip#40237](https://github.com/zulip/zulip/pull/40237) — user_status: Hide status emoji with the plain-text emoji theme.
 - [RocketChat/Rocket.Chat#42158](https://github.com/RocketChat/Rocket.Chat/pull/42158) — fix: custom category never highlighted in the emoji picker header
 - [RocketChat/Rocket.Chat#42084](https://github.com/RocketChat/Rocket.Chat/pull/42084) — fix: home page custom content card overflows on narrow viewports
 
@@ -49,4 +49,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-11-11 23:59 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-11-12 19:29 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
