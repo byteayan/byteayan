@@ -1,8 +1,12 @@
 <div align="center">
 
+<img src="assets/banner.png" alt="Ayan Alam, open source contributor: Java server work and web frontends" width="100%"/>
+
 # Ayan Alam
 
-Open source contributor · Java server work & web frontends
+Open source contributor · Apache HugeGraph & Open Food Facts · Java server work & web frontends
+
+[LinkedIn](https://www.linkedin.com/in/byteayan) · [X](https://x.com/byteayan)
 
 </div>
 

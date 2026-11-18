@@ -1,9 +1,13 @@
 <!-- AUTO-GENERATED from README.template.md — do not edit by hand -->
 <div align="center">
 
+<img src="assets/banner.png" alt="Ayan Alam, open source contributor: Java server work and web frontends" width="100%"/>
+
 # Ayan Alam
 
-Open source contributor · Java server work & web frontends
+Open source contributor · Apache HugeGraph & Open Food Facts · Java server work & web frontends
+
+[LinkedIn](https://www.linkedin.com/in/byteayan) · [X](https://x.com/byteayan)
 
 </div>
 
@@ -49,4 +53,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-11-12 19:29 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-11-18 06:04 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
