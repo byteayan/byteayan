@@ -34,7 +34,7 @@ Outside upstream work I'm building [Alpha Region](https://github.com/byteayan/Al
 Open pull requests in upstream projects (refreshed automatically).
 
 - [openfoodfacts/openfoodfacts-explorer#2181](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2181) — feat(preferences): add expand all, collapse all and reset to defaults
-- [openfoodfacts/openfoodfacts-explorer#2076](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2076) — feat(compare): explain the NOVA group in the comparison table
+- [openfoodfacts/openfoodfacts-explorer#2076](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2076) — feat(compare): explain the scores in the comparison table
 - [openfoodfacts/openfoodfacts-explorer#2075](https://github.com/openfoodfacts/openfoodfacts-explorer/pull/2075) — fix(edit): stop truncating the energy inputs in the nutrition step
 - [zulip/zulip#40237](https://github.com/zulip/zulip/pull/40237) — user_status: Hide status emoji with the plain-text emoji theme.
 - [RocketChat/Rocket.Chat#42158](https://github.com/RocketChat/Rocket.Chat/pull/42158) — fix: custom category never highlighted in the emoji picker header
@@ -53,4 +53,4 @@ Java · Python · TypeScript · JavaScript · Scala · SvelteKit · Vue · React
 
 ---
 
-<sub>Auto-updated 2026-11-18 06:04 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
+<sub>Auto-updated 2026-11-19 15:11 UTC · [workflow](.github/workflows/update-readme.yml)</sub>
